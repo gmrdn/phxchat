@@ -1,18 +1,68 @@
-<!-- The list of messages will appear here: -->
-<div class="float-left jumbotron">
- 
-<ul id='msg-list' style='list-style: none; min-height:200px; padding: 10px; *display: inline;'></ul>
-</div>
+<div class="float-left jumbotron" style='width: 35%;'>
+  <ul id='to-do-list' class="float-left" style='list-style: none; width:45%; height:400px; overflow-y: scroll; padding: 10px; *display: inline;'>
+  <h5>To Do</h5>
+    <li>
+      <div class="card"">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <b>.........</b><a href="#" class="card-link">+1</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is some text within a card body.</p>
+          <b>...</b><a href="#" class="card-link">+1</a>
+        </div>
+      </div>
+    </li>
+       <li>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is some text within a card body.</p>
+          <b></b><a href="#" class="card-link">+1</a>
+        </div>
+      </div>
+    </li>
+  </ul>
 
+  <ul id='in-progress-list' class="float-right" style='list-style: none; width:45%; height:400px; overflow-y: scroll; *display: inline;'>
+  <h5>In Progress</h5>
 
-<div class="float-right jumbotron">
-  <ul id='to-do-list'>
-    <li>to do 1</li>
-    <li>to do 2</li>
+      <li>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is some text within a card body.</p>
+          <b>...</b><a href="#" class="card-link">+1</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <ul id='done-list' class="float-right" style='list-style: none; width:45%; height:400px; overflow-y: scroll; *display: inline;'>
+  <h5>Done</h5>
+
+      <li>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is some text within a card body.</p>
+          <b>...</b><a href="#" class="card-link">+1</a>
+        </div>
+      </div>
+    </li>
   </ul>
 </div>
 
-<div>
+<!-- The list of messages will appear here: -->
+<div class="float-right jumbotron" style='width: 60%;'>
+  <h5>Chatbox</h5>
+  <ul id='msg-list' style='list-style: none; height:400px; overflow-y: scroll; padding: 10px; *display: inline;'></ul>
   <div>
     <input type="text" id="name" placeholder="Your Name" autofocus>
   </div>
@@ -20,4 +70,3 @@
     <input type="text" id="msg" placeholder="Your Message">
   </div>
 </div>
-

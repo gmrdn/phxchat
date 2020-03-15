@@ -9,6 +9,7 @@ channel.on('shout', function(payload) {
     li.innerHTML = '<b>' + name + '</b>: ' + payload.message;
 
     ul.appendChild(li);
+    updateScroll();
 });
 
 channel.join();
@@ -26,4 +27,9 @@ msg.addEventListener('keypress', function (event){
         msg.value = '';
     }
 });
+
+function updateScroll(){
+    var element = document.getElementById("msg-list");
+    element.scrollTop = element.scrollHeight;
+}
 
